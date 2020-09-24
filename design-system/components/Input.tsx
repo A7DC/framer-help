@@ -32,7 +32,7 @@ export const Input: React.FC<Props> = ({
     type="text"
     value={value}
     placeholder={placeholder}
-    className={`${error ? "error" : ""} ${disabled ? "disabled" : ""} bg-purple red w-100 h6 flex absolute`}
+    className={'bg-purple red w-100 h6 flex absolute'}
     onChange={onChange}
   />
 )
@@ -40,7 +40,5 @@ export const Input: React.FC<Props> = ({
 // Styles
 const StyledInput = styled.input`
   &.error::placeholder {
-    color: ${theme.color.danger};
-    opacity: 0.5;
   }
 `

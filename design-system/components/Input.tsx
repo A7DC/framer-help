@@ -32,7 +32,7 @@ export const Input: React.FC<Props> = ({
     type="text"
     value={value}
     placeholder={placeholder}
-    className={`${error ? "error" : ""} ${disabled ? "disabled" : ""}`}
+    className={`${error ? "error" : ""} ${disabled ? "disabled" : ""} bg-purple red w-100 h6 flex absolute`}
     onChange={onChange}
   />
 )
